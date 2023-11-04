@@ -19,7 +19,7 @@ type compilerTestCase struct {
 func TestIntergerArithmetic(t *testing.T) {
 	tests := []compilerTestCase{
 		{
-			input:             "1+2",
+			input:             "1 + 2",
 			expectedConstants: []interface{}{1, 2},
 			expectedInstructions: []code.Instructions{
 				code.Make(code.OpConstant, 0),
