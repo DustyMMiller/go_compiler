@@ -52,6 +52,7 @@ type Integer struct {
 
 type CompiledFunction struct {
 	Instructions code.Instructions
+	NumLocals    int
 }
 
 func (i *Integer) Type() ObjectType { return INTEGER_OBJ }
