@@ -201,7 +201,7 @@ func (cf *CompiledFunction) Inspect() string {
 	return fmt.Sprintf("CompiledFunction[%p]", cf)
 }
 
-func (c *Closure) Type() ObjectType { return CLOSURE}
+func (c *Closure) Type() ObjectType { return CLOSURE_OBJ }
 func (c *Closure) Inspect() string {
   return fmt.Sprintf("Closure[%p]", c)
 }
